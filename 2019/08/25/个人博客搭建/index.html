@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="总体流程  博客搭建可以说简单也可以说难，对于小白来说一切都是陌生的，当出现一些问题时很难  自己解决，这个时候就需要反复进行操作，在不断的失败中总结经验并且了解每一个步骤  的意义。  首先我们需要安装nodejs和git ,先安装nodejs，不管是hexo还是git都是在有node的前提  下运行的。等node和git安装完后就可以安装博客静态模板Hexo,先在本地操作，没问题后  再部署到">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-25T07:54:52.965Z">
+<meta property="og:updated_time" content="2019-08-25T08:04:32.856Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="个人博客搭建">
 <meta name="twitter:description" content="总体流程  博客搭建可以说简单也可以说难，对于小白来说一切都是陌生的，当出现一些问题时很难  自己解决，这个时候就需要反复进行操作，在不断的失败中总结经验并且了解每一个步骤  的意义。  首先我们需要安装nodejs和git ,先安装nodejs，不管是hexo还是git都是在有node的前提  下运行的。等node和git安装完后就可以安装博客静态模板Hexo,先在本地操作，没问题后  再部署到">
@@ -91,10 +91,26 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="总体流程"><a href="#总体流程" class="headerlink" title="总体流程"></a>总体流程</h2><p>  博客搭建可以说简单也可以说难，对于小白来说一切都是陌生的，当出现一些问题时很难<br>  自己解决，这个时候就需要反复进行操作，在不断的失败中总结经验并且了解每一个步骤<br>  的意义。<br>  首先我们需要安装nodejs和git ,先安装nodejs，不管是hexo还是git都是在有node的前提<br>  下运行的。等node和git安装完后就可以安装博客静态模板Hexo,先在本地操作，没问题后<br>  再部署到github托管，这里是需要安装一个deployer.git的插件后面会说到。</p>
-<h2 id="安装node和git"><a href="#安装node和git" class="headerlink" title="安装node和git"></a>安装node和git</h2><p>   第一步 node安装包的地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
-<p>   选择LTS版本安装就行了，也就是左边的版本，下载后进行安装，一路next,不需要修改<br>   安装路径，全按默认就好。<br>   打开windows或Linux运行，输入cmd,打开命令框<br>   输入 node -v      //查看node版本<br>   输入 npm -v       //查看npm版本<br>   1.输入 npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>   //因为国内的npm包管理器比较慢，选择用npm安装淘宝镜像源cnpm，会自动安装<br>   输入 cnpm -v      //查看cnpm<br>   2.输入 cnpm install -g hexo-cli  //安装hexo静态博客模板，等待下载<br>   输入 hexo -v      //验证是否安装<br>   3.输入 mkdir blog   //在当前根目录下新建一个blog文件夹<br>   输入 cd blog      //查看当前文件夹路径<br>   结束cmd，记住blog文件夹的位置，之后的步骤都在blog文件夹下进行，整个博客都安装<br>   在blog文件夹下，如果出现解决不了的问可以直接删除blog文件，重新搭建，比较方便</p>
-<p>   第二步 安装git<br>   git安装包地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a><br>   安装包下载完后打开，也是默认安装，不要改默认安装途径。一路next,一切按照默认来<br>   就行了。<br>   git安装完后，在文件右键就会有git bash here 的选项那就恭喜安装成功了。</p>
-<h2 id="hexo搭建"><a href="#hexo搭建" class="headerlink" title="hexo搭建"></a>hexo搭建</h2><pre><code>安装完git后就能进行之后的操作了，首先找到之前新建的blog文件
+<h2 id="安装node和git"><a href="#安装node和git" class="headerlink" title="安装node和git"></a>安装node和git</h2><pre><code>第一步 node安装包的地址：https://nodejs.org/en/
+选择LTS版本安装就行了，也就是左边的版本，下载后进行安装，一路next,不需要修改
+安装路径，全按默认就好。
+打开windows或Linux运行，输入cmd,打开命令框
+输入 node -v      //查看node版本
+输入 npm -v       //查看npm版本
+1.输入 npm install -g cnpm --registry=https://registry.npm.taobao.org
+//因为国内的npm包管理器比较慢，选择用npm安装淘宝镜像源cnpm，会自动安装
+输入 cnpm -v      //查看cnpm
+2.输入 cnpm install -g hexo-cli  //安装hexo静态博客模板，等待下载
+输入 hexo -v      //验证是否安装
+3.输入 mkdir blog   //在当前根目录下新建一个blog文件夹
+输入 cd blog      //查看当前文件夹路径
+结束cmd，记住blog文件夹的位置，之后的步骤都在blog文件夹下进行，整个博客都安装
+在blog文件夹下，如果出现解决不了的问可以直接删除blog文件，重新搭建，比较方便
+
+第二步 安装git
+git安装包地址：https://nodejs.org/en/
+安装包下载完后打开，也是默认安装，不要改默认安装途径。一路next,一切按照默认来就行了。
+git安装完后，在文件右键就会有git bash here 的选项那就恭喜安装成功了。</code></pre><h2 id="hexo搭建"><a href="#hexo搭建" class="headerlink" title="hexo搭建"></a>hexo搭建</h2><pre><code>安装完git后就能进行之后的操作了，首先找到之前新建的blog文件
 打开空文件夹,右键，点击git bash here,打开命令框
 1.输入： hexo init    //在blog文件下初始化Hexo,等待初始化。。。
 这时已经生成了hexo的初始页面，接下来将hexo从本地部署到github托管，注册github
@@ -104,7 +120,7 @@ https://github.com/仓库名  访问我们的hexo博客
 系，可能是防火墙的关系，这一步只是用来验证是否初始化成功，可省略
 3.cnpm install --save hexo-deployer-git  //安装部署插件，部署到的远端插件
 4.修改blog文件下的_config.yml文件
-确认在blog目录下
+确认在blog目录下       //退回上一级 cd ..   退回俩级 cd ../..
 vim _config.yml       //进入vim编辑器，找到type:  修改并在添加repo和branch
 type: git
 repo：https://github.com/ID/ID.github.io.git
@@ -122,7 +138,7 @@ hexo clean，就是为了避免冲突。
 搭建好的个人博客了。</code></pre><h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><pre><code>打开bolg文件，右键git bash here打开命令框
 1.cd source/_posts    //寻址到存放文章的文件夹，不然会将文章直接创建在blog下
 2.hexo n &quot;文章名称&quot;   //创建 文章名称.md 文件，注意空格
-3.vim 文章名称.md 文件 //进入vim编辑器，在vim编辑器下写文章，vim的使用后面的
+3.vim 文章名称.md 文件 //进入vim编辑器，在vim编辑器下写文章，注意文章的.md后缀不要忘了。vim的使用后面的
 的文章会有详细的说明。同学们可以专门学一学vim编辑器的用法，vim是个神器。
 暂时知道按a或i进入插入模式能进行编辑就行，esc回到普通模式
 
@@ -152,7 +168,7 @@ index.html文件为0kb的情况，也是新主题导致的，请更加仔细的�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/25/个人博客搭建/" data-id="cjzqogj0j0000d0uj8a5xd5dy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/25/个人博客搭建/" data-id="cjzqosyea000230uj127y5o7i" class="article-share-link">Share</a>
       
       
     </footer>
