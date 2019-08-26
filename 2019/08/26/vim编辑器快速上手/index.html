@@ -5,18 +5,19 @@
   
 
   
-  <title>Archives | Hexo</title>
+  <title>vim编辑器快速上手 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="have a dream">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="将esc和capslk键切换为什么要切换呢？因为在vim的使用中esc会频繁使用到，但平时距离太远，并且capslk大小写切换键不常用，切换后能提高我们在vim的编辑速度。 首先打开windows运行cmd,打开命令框后 输入:regedit 打开注册表,按照这个目录点开     [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vim编辑器快速上手">
+<meta property="og:url" content="http://yoursite.com/2019/08/26/vim编辑器快速上手/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="have a dream">
+<meta property="og:description" content="将esc和capslk键切换为什么要切换呢？因为在vim的使用中esc会频繁使用到，但平时距离太远，并且capslk大小写切换键不常用，切换后能提高我们在vim的编辑速度。 首先打开windows运行cmd,打开命令框后 输入:regedit 打开注册表,按照这个目录点开     [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboa">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-26T07:43:44.028Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="have a dream">
+<meta name="twitter:title" content="vim编辑器快速上手">
+<meta name="twitter:description" content="将esc和capslk键切换为什么要切换呢？因为在vim的使用中esc会频繁使用到，但平时距离太远，并且capslk大小写切换键不常用，切换后能提高我们在vim的编辑速度。 首先打开windows运行cmd,打开命令框后 输入:regedit 打开注册表,按照这个目录点开     [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboa">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -67,97 +68,61 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/26/vim编辑器快速上手/" class="archive-article-date">
-  <time datetime="2019-08-26T07:33:00.000Z" itemprop="datePublished">Aug 26</time>
+        <section id="main"><article id="post-vim编辑器快速上手" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/26/vim编辑器快速上手/" class="article-date">
+  <time datetime="2019-08-26T07:33:00.000Z" itemprop="datePublished">2019-08-26</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/26/vim编辑器快速上手/">vim编辑器快速上手</a>
+    <h1 class="article-title" itemprop="name">
+      vim编辑器快速上手
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/25/个人博客搭建/" class="archive-article-date">
-  <time datetime="2019-08-25T06:05:49.000Z" itemprop="datePublished">Aug 25</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/25/个人博客搭建/">个人博客搭建</a>
-    </h1>
-  
+        <h2 id="将esc和capslk键切换"><a href="#将esc和capslk键切换" class="headerlink" title="将esc和capslk键切换"></a>将esc和capslk键切换</h2><pre><code>为什么要切换呢？因为在vim的使用中esc会频繁使用到，但平时距离太远，并且capslk大小写切换键不常用，切换后能提高我们在vim的编辑速度。
+首先打开windows运行cmd,打开命令框后
+输入:regedit
+打开注册表,按照这个目录点开
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/24/怎么用git/" class="archive-article-date">
-  <time datetime="2019-08-24T11:57:24.000Z" itemprop="datePublished">Aug 24</time>
-</a>
+   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+
+ 在keyboard Layout文件下新建多字符文件
+ 修改文件名后（随意写一个文件名）
+ 双击文件打开将下面的代码粘贴到内容上</code></pre><p>“Scancode Map”=hex:00,00,00,00,00,00,00,00,03,00,00,00,3a,00,01,00,01,00,3a,00,00,00,0 0,00<br>然后重启电脑就行了。</p>
+
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/24/怎么用git/">怎么用git</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/24/hello-world/" class="archive-article-date">
-  <time datetime="2019-08-24T11:43:10.624Z" itemprop="datePublished">Aug 24</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/26/vim编辑器快速上手/" data-id="cjzs3i1p40000roujj5ch3jhq" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/24/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
+      
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/08/25/个人博客搭建/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">个人博客搭建</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         

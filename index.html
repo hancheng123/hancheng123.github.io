@@ -69,6 +69,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-vim编辑器快速上手" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/26/vim编辑器快速上手/" class="article-date">
+  <time datetime="2019-08-26T07:33:00.000Z" itemprop="datePublished">2019-08-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/26/vim编辑器快速上手/">vim编辑器快速上手</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="将esc和capslk键切换"><a href="#将esc和capslk键切换" class="headerlink" title="将esc和capslk键切换"></a>将esc和capslk键切换</h2><pre><code>为什么要切换呢？因为在vim的使用中esc会频繁使用到，但平时距离太远，并且capslk大小写切换键不常用，切换后能提高我们在vim的编辑速度。
+首先打开windows运行cmd,打开命令框后
+输入:regedit
+打开注册表,按照这个目录点开
+
+   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+
+ 在keyboard Layout文件下新建多字符文件
+ 修改文件名后（随意写一个文件名）
+ 双击文件打开将下面的代码粘贴到内容上</code></pre><p>“Scancode Map”=hex:00,00,00,00,00,00,00,00,03,00,00,00,3a,00,01,00,01,00,3a,00,00,00,0 0,00<br>然后重启电脑就行了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/26/vim编辑器快速上手/" data-id="cjzs3i1p40000roujj5ch3jhq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-个人博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/08/25/个人博客搭建/" class="article-date">
@@ -169,7 +215,7 @@ index.html文件为0kb的情况，也是新主题导致的，请更加仔细的�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/25/个人博客搭建/" data-id="cjzqosyea000230uj127y5o7i" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/25/个人博客搭建/" data-id="cjzs3i1pc0002roujam8801v6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -384,7 +430,7 @@ git pull //拉取文件
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/24/怎么用git/" data-id="cjzqosye8000130ujwhbmnysx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/24/怎么用git/" data-id="cjzs3i1pd0003roujydryv5hp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -433,7 +479,7 @@ git pull //拉取文件
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/24/hello-world/" data-id="cjzqosye3000030ujclw0c5p9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/24/hello-world/" data-id="cjzs3i1p90001roujykl8te5y" class="article-share-link">Share</a>
       
       
     </footer>
@@ -472,6 +518,10 @@ git pull //拉取文件
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/08/26/vim编辑器快速上手/">vim编辑器快速上手</a>
+          </li>
         
           <li>
             <a href="/2019/08/25/个人博客搭建/">个人博客搭建</a>
